@@ -1,0 +1,25 @@
+
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="container">
+<h1> Welcome </h1>
+<p>
+	You can log in here
+</p> 
+<h2>login</h2>
+ <form action="/accounts/loggedin/" method="post">
+	{% csrf_token %}
+	{{ form.as_p }}
+<label for="ad_pass" required="true">admin password:</label><br>
+	<input type="password" name="ad_pass" value="" id="ad_pass" required="true"><br>
+	<button type="submit" name="button">Login</button>
+	 <br>
+
+</form> 
+
+
+
+</div>
+
+{% endblock %}

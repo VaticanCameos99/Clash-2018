@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h1> Rules of the game: </h1>
+<form action="/accounts/timer/" method="POST">
+{%csrf_token%}
+<!--<a href="/accounts/timer">-->
+<button type="submit"> Start Quiz </button>
+</form>
+{% endblock %}

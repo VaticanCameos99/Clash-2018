@@ -1,0 +1,53 @@
+
+{% extends 'base.html' %}
+{% block body %}
+{% load static %}
+<h1> The details are: </h1>   <!--This line should be outside fror loop-->
+<form action="/accounts/anscheck/" method="post">
+{% csrf_token %}
+		<p> Score : {{ u.score }}</p>
+		<p>Time: {{t}}</p>
+		<p> Question: {{ v.question }}</p>
+		<br>
+		<input type="radio" id="opt" name="opt" value="1" onclick="doSomething();" required="True"> {{ v.A }}
+		<br><br>
+		<input type="radio" id="opt" name="opt" value="2" onclick="doSomething();" required="True"> {{ v.B }}
+		<br>
+		<input type="radio" id="opt" name="opt" value="3"onclick="doSomething();" required="True"> {{ v.C }}
+		<br>
+		<input type="radio" id="opt" name="opt" value="4" onclick="doSomething();" required="True"> {{ v.D }}
+		<input type="submit" name="submit">
+		<p>Number of Questions attempted: {{u.}}
+		<p>Number of Correct answers: {{u.correct_answer}}</p>
+</form>
+<form action="/accounts/skipurl1/" method="POST">
+	{%csrf_token%}
+	<button type="submit"> Skip </button>
+</form>
+<form action="/accounts/perception/" method="POST">
+{%csrf_token%}
+	<button type="submit"> Perception </button>
+</form>
+
+</style>
+</head>
+<body>
+<script type="text/javascript" srd="{% static 'admin/js/vendor/jquery.min.js' %}"></script>
+<script type="text/javascript" srd="{% static 'dajax/jquery.dajax.core.js' %}"></script>
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+{% block javascript %}
+  <script>
+$("document").ready(function () {
+
+  	document.getElementById("Button").disabled = true;
+ });
+   function doSomething()
+{
+document.getElementById("Button").disabled = false;
+}
+
+
+</script>
+{% endblock %}
+<p id="demo"></p>
+{% endblock %}

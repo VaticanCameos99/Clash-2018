@@ -1,0 +1,359 @@
+
+body
+{
+	margin: 0;
+	padding: 0;
+	
+	background-size: cover;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+
+
+.card
+{
+	
+	margin-top: 30vh;
+	height: 400px;
+	width: 350px;
+	transform-style: preserve-3d;
+	perspective: 600px;
+	transition: 0.5s;
+	border-radius: 20px;
+
+	
+}
+
+.card .front
+{
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	position: absolute;	
+	display: grid;
+	text-align: center;
+	align-items: center;
+	transform: rotateY(0deg);
+	backface-visibility: hidden;
+	height: 100%;
+	width: 100%;
+	box-shadow: 0px 0px 20px black;
+	animation-name: cardflipfront1;
+	animation-duration: 2s;
+	animation-delay: 0.5s;
+	transition: 1s;
+	border-radius: 20px;
+
+
+	
+}
+
+.card:hover .front
+{
+	transform: rotateY(-180deg);
+	transition: 1s;
+}
+
+.card .back
+{
+	background: rgba(208,247,228,0.815);
+	top: 0;
+	left: 0;
+	position: absolute;	
+	transform: rotateY(180deg);
+	backface-visibility: hidden;
+	height: 100%;
+	width: 100%;
+	box-shadow: 5px 0px 20px black;
+	animation-name: cardflipback1;
+	animation-duration: 2s;
+	animation-delay: 0.5s;
+	transition: 1s;
+	border-radius: 20px;
+
+}
+.card:hover .back
+{
+	transform: rotateY(0deg);
+	transition: 1s;
+	
+}
+
+.card1
+{
+
+	
+	top: 0;
+	left: 0;
+	margin-top: 30vh;
+	height: 500px;
+	width: 600px;
+	transform-style: preserve-3d;
+	perspective: 600px;
+	transition: 0.5s;
+	display: grid;
+	text-align: center;
+	border-radius: 20px;
+
+
+
+
+
+}
+
+.card1 .front
+{
+	top: 0;
+	left: 0;
+		background: rgba(208,247,228,0.815);
+	position: absolute;
+	display: grid;
+	text-align: center;
+	transform: rotateX(0deg);
+	transition: 0.5s;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	box-shadow: 0px 0px 20px black;
+	border-radius: 20px;
+}
+
+.textshutter
+{
+	position: absolute;
+	display: grid;
+	text-align: center;
+	align-items: center;
+
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.95);
+	animation-name: shutter;
+	animation-duration: 1s;
+	animation: shutter 1s forwards;
+	animation-delay: 0.5s;
+	box-shadow: 0px 0px 70px black;
+
+}
+
+@keyframes shutter
+{
+	from{
+		position: absolute;
+		display: grid;
+		text-align: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.3);
+	}
+	
+	to{
+		width: 100%;
+		height: 15%;
+		border-radius: 20px;
+		
+
+	}
+	
+}
+
+@keyframes contentup
+{
+	from{
+		top: 100%;
+	width: 100%;
+	position: absolute;
+	height: (100% - 100px);
+	text-align: center;
+	box-sizing: border-box;
+		}
+
+	to{
+		top: 30px;
+
+	}
+	
+}
+
+.card1 .front .content 
+{
+	top: 100%;
+	width: 100%;
+	position: absolute;
+	height: (100% - 100px);
+	text-align: left;
+	margin-left: 2vw;
+	box-sizing: border-box;
+	animation-name: contentup;
+	animation: contentup 1s forwards;
+	animation-duration: 1s;
+	animation-delay: 0.5s;
+
+
+}
+
+
+.button {
+	width:10vw;
+	height: 5.5vh;
+	display: flex; 
+	/*background: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);*/
+	font-size: 19px;
+	font-family: FreeMono,monospace;
+	color: rgb(27, 28, 29);
+	justify-content: center;
+	align-items: center;
+	margin-left: 13.5vw;
+	border: none;
+	font-weight: bold;
+	cursor: pointer;
+	outline: none;
+	clip-path: polygon(90% 0, 100% 50%, 90% 100%, 10% 100%, 0 50%, 10% 0);
+display: block;
+border-radius: 5px;
+color: rgb(188, 226, 243);
+background: rgb(7, 26, 68);
+box-shadow: 25px 25px 25px black;
+
+
+}
+
+.button:hover
+{
+	text-shadow: 0 0 5px black;
+	color:white;
+	transition: 0.5s;
+}
+.button:focus
+{
+	outline: none;
+
+}
+.button:active{
+	transform: translateY(10px);
+
+}
+
+
+@keyframes cardflipfront1
+{
+	from 
+	{
+		transform: rotateY(0deg);
+	}
+
+	to
+	{
+		transform: rotateY(-360deg);
+	}
+}
+
+@keyframes cardflipback1
+{
+	from 
+	{
+		transform: rotateY(180deg);
+	}
+
+	to
+	{
+		transform: rotateY(-180deg);
+	}
+}
+
+.card2
+{
+	
+	margin-top: 30vh;
+	height: 400px;
+	width: 350px;
+	transform-style: preserve-3d;
+	perspective: 600px;
+	transition: 0.5s;
+
+
+	
+}
+
+.card2 .front
+{
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	position: absolute;	
+	display: grid;
+	text-align: center;
+	align-items: center;
+	transform: rotateY(0deg);
+	backface-visibility: hidden;
+	height: 100%;
+	width: 100%;
+	box-shadow: 5px 0px 20px black;
+	animation-name: cardflipfront2;
+	animation-duration: 2s;
+	animation-delay: 0.5s;
+	transition: 1s;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+
+	
+}
+
+.card2:hover .front
+{
+	transform: rotateY(180deg);
+	transition: 1s;
+}
+
+.card2 .back
+{
+	background: rgba(208,247,228,0.815);
+	top: 0;
+	left: 0;
+	position: absolute;	
+	transform: rotateY(-180deg);
+	backface-visibility: hidden;
+	height: 100%;
+	width: 100%;
+	box-shadow: 5px 0px 20px black;
+	animation-name: cardflipback2;
+	animation-duration: 2s;
+	animation-delay: 0.5s;
+	transition: 1s;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+.card2:hover .back
+{
+	transform: rotateY(0deg);
+	transition: 1s;
+	
+}
+@keyframes cardflipfront2
+{
+	from 
+	{
+		transform: rotateY(0deg);
+	}
+
+	to
+	{
+		transform: rotateY(360deg);
+	}
+}
+
+@keyframes cardflipback2
+{
+	from 
+	{
+		transform: rotateY(-180deg);
+	}
+
+	to
+	{
+		transform: rotateY(180deg);
+	}
+}

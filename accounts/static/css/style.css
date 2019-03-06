@@ -1,0 +1,48 @@
+* {
+  text-shadow: 1px 1px 0 #000;
+  box-sizing: border-box;
+  font-family: Ubuntu, sans-serif;
+}
+
+body {
+  background: linear-gradient(-10deg, #772953, #e95420);
+  font-size: 18px;
+}
+
+.container-fluid  {
+
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #fff;
+  border-radius: 2px;
+  text-align: center;
+  height: 86vh;
+}
+
+.section{
+	 border: 1px solid #fff;
+  border-radius: 2px;
+  height: 86vh;
+}
+.navbar__section{
+	 border: 1px solid #fff;
+  border-radius: 2px;
+  height:7vh;
+}
+
+.textarea{
+  height: 50vh;
+  resize: none;
+}
+
+.score-card{
+  height:20vh;
+  position: relative;
+}
+
+
+.score-card__space{
+  height:10vh;
+  position: absolute;
+  top:8vh;    
+  display: flex;
+}

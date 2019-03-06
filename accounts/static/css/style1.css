@@ -1,0 +1,60 @@
+body{
+    background: linear-gradient(150deg, #d8532a, #a7231a);
+    font-size: 20px;
+}
+/*2f90ff
+2464ad*/
+.navig{
+    background-color:rgb(187, 57, 6);
+    height:7vh; 
+    border:3px solid;
+    border-color: darkmagenta;
+}
+.container-fluid{
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #fff;
+    border-radius: 2px;
+    text-align: center;
+    height: 92vh;
+}
+.section{
+    height: 92vh;
+    position: relative;
+}
+.marking{
+    height:25vh;
+    color: white;
+    position: relative;
+}
+.box_inside{
+    top:10vh;
+    position: absolute;
+    height:10vh;
+
+}
+.next{
+    height: 10vh;
+    left:10%;
+    position:relative;
+    width:80%;
+    color: white;
+}
+
+.marking2{
+    height:20vh;
+    position: relative;
+    color:white;
+   
+    
+}
+.marking3{
+    height:8vh;
+    position: relative;
+}
+.btn_ht{
+    top: 1vh;
+    position: relative;
+}
+.round{
+    border-radius: 15px;
+}

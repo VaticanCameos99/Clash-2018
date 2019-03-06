@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+{% load staticfiles %}
+    <title>
+        REVERSE CODING
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=shrink, initial-scale=1, shrink-to-fit=no">
+    <link href="{% static "css/bootstrap.css" %}" rel="stylesheet">
+    <script src="{% static "anime.js" %}" ></script>
+    <link rel="stylesheet" href="{% static "css/result.css" %}">
+</head>
+
+<body  style="background-image: url({% static "images/pos.jpg" %});">
+    <nav class="navbar navbar-expand-lg navig">
+						<img src="{% static "images/clash.png" %}" alt="IMAGE HERE" href="#!" style="height:12.5vh;width:95px;margin-left:-1vw;">
+
+						<img src="{% static "images/pisb_color.png" %}" alt="IMAGE HERE" href="#!" style="height:5vh;width:120px;margin-right:-10px;margin-top:-0.5vw;margin-left:147vh;">
+    </nav>
+    <div class="container-fluid contain">
+        <div class="row">
+            <div class="col-lg-2 question fadeIn" id="id2">
+                <div class="fadeIn">QUESTIONS ATTEMPTED</div>
+                <div class="response fadeIn">{{ final_number_ques }}</div>
+            </div>
+
+            <div class="score" id="id1">
+                <div class="fadeIn" style="margin-left: 1vw">SCORE
+                    <br>
+                </div>
+                <input class="text-output b fadeIn1" value="-100" disabled="true">
+                <script>
+                    var domAttributes = anime({
+                        targets: '.score input',
+                        value: {{ final_score }},
+                        round: 1,
+                        duration: 1500,
+                        delay: 1000,
+                        easing: 'easeInOutExpo'
+                    });
+                </script>
+            </div>
+            <div class="col-lg-2 question1 fadeIn" id="id3">
+                <div class="fadeIn">
+                    CORRECT RESPONSES
+                </div>
+                <div class="response fadeIn">{{ final_corr_ans }}</div>
+            </div>
+            <div class="col-lg-3 other fadeIn" id="id4" style="margin-top: 2vh;">
+                <div class="fadeIn" style="font-size: 4.5vh;display: flex;justify-content: center;margin-top: 2vh;">
+
+                    REVERSE CODING
+                    <br>
+                </div>
+                <div class="info fadeInTop">
+                    Reverse Coding is a game which tests your logic and speed of developing algorithms of various mathematical phenomena. In
+                    this game you have to find answers of integer type questions using C/C++ code.
+
+                </div>
+                <img src="{% static "images/revb.png" %}" style="margin-top:-20vh;margin-left:7vh;">
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navig  d-flex justify-content-center">
+        <div style="color:beige;">&copy IEEE COMPUTER SOCIETY
+            <div>
+    </nav>
+
+</body>
+
+</html>

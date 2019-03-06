@@ -1,0 +1,539 @@
+body{
+			
+			background-size: cover;
+			resize: none;
+			/*background: linear-gradient(to left, #02aab0 6%, #00cdac 60%);*/
+			background-size: cover;
+		}
+		.navig{
+		             height:7vh;
+		             border:1px solid #141414;
+					 background: rgb(0, 0, 0);
+
+		        }
+		        .contain{
+		            height: 86vh;
+		            border: 1px solid rgb(0, 0, 0);
+		        }    
+		        .leftdiv{
+		            border: 0px solid red;
+		            height:83.5vh;
+		            position: relative;
+		            display: flex;
+		            justify-content: center;
+		            align-items: center;
+		        }
+		        .insideit{
+		            border:2px solid rgb(0, 0, 0);
+					background-color: rgb(0, 0, 0);
+					border-radius: 5px;
+		            position: absolute;
+					color: white;
+		            height:80vh;
+					box-shadow: 0px 5px 10px black;
+		            
+		        }
+		        .score{
+		            border:0px solid rgb(95, 95, 95);
+		            height:25vh;
+					border-radius: 5px;
+		            position: relative;
+		            display: flex;
+		            justify-content: center;
+		            width: 80%;
+					margin-left: 3.8vh;
+                    background-color:rgba(129, 188, 224, 0.815);
+                    color: black;
+		            
+		        }
+		        .scorebox{
+		            border: 1px solid slateblue;
+					border-radius: 5px;
+		            height:15vh;
+		            position: absolute;
+					top:7vh;
+					box-shadow: 0px 0px 4px 2.5px black;
+		        }
+		        .questionbox{
+		            border: 0px solid green;
+		            height: 83.5vh;
+		           margin-top: 1.9vh;
+		        }
+		        .quesarea{
+		            border: 2px solid black;
+					border-radius: 5px;
+					background-color:rgba(10, 10, 10, 1);
+		            height: 62.5vh;
+					margin-left: -20vh;
+					color: white;
+		            resize: none;
+		            outline: none;
+		            cursor: auto;
+					box-shadow: 0px 5px 10px rgb(0, 0, 0);
+				}
+				
+		      
+		        .buttonall{
+		            width:85%;
+		            height: 5.5vh;
+		            display: flex; 
+					/*background: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);*/
+					background-color: teal;
+		            justify-content: center;
+		            border: none;
+		            align-items: center;
+		            color: rgb(205, 210, 216);
+					border-radius: 5px;
+		            cursor: pointer;
+		            outline: none;
+                    font-weight: bold;  
+					
+		        }
+				
+
+               .button {
+                    width:85%;
+		            height: 5.5vh;
+		            display: flex; 
+					/*background: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);*/
+                   
+                    color: rgb(27, 28, 29);
+		            justify-content: center;
+		            align-items: center;
+                    margin-left: 0.3vw;
+                    border: none;
+					font-weight: bold;
+		            cursor: pointer;
+		            outline: none;
+                    clip-path: polygon(90% 0, 100% 50%, 90% 100%, 10% 100%, 0 50%, 10% 0);
+    display: block;
+    border-radius: 5px;
+    color: rgb(188, 226, 243);
+    
+    background-color: #2979afd7;
+    
+
+}
+.button:hover {
+    color: rgb(188, 226, 243);
+    text-shadow: 2px 2px 2px black;
+    background-color: #2979afd7;
+}
+.button:active {
+    position: relative;
+    color: #fff;
+   
+    box-shadow: 1px 1px 1px rgba(255,255,255,0.1); /* CSS3 */
+}
+
+.button:focus{
+    outline: none;
+}
+.button1 {
+                    width:85%;
+		            height: 5.5vh;
+		            display: flex; 
+					/*background: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);*/
+                   
+                    color: rgb(27, 28, 29);
+		            justify-content: center;
+		            align-items: center;
+                    margin-left: 0.3vw;
+                    border: none;
+					font-weight: bold;
+		            cursor: pointer;
+		            outline: none;
+                    clip-path: polygon(90% 0, 100% 50%, 90% 100%, 10% 100%, 0 50%, 10% 0);
+    display: block;
+    border-radius: 5px;
+    color: rgb(188, 226, 243);
+    
+    background-color: #2f333d;
+    
+
+}
+                .buttonall:active{
+					transform: translateY(4px);
+				}
+                .btn:active{
+					transform: translateY(4px);
+				}
+		        .options{
+		            height:17vh;
+		            width:100vw;
+		            border: 0px solid black;
+					border-radius: 5px;
+		            position: relative;
+		            
+		        }
+		        .theoptions{
+		            
+		            border: 1px solid red;
+		            height: 11vh;
+		            background: white;
+		            cursor: pointer;
+		            
+		        }
+		        .scrollbar{
+		            overflow:scroll;
+		            overflow-x: hidden;
+		            overflow-y:scroll;
+		            
+		        }
+		        .bor{
+		            border: 1px solid red;
+		            height: 6vh;
+		            display: flex;
+		            align-items: center;    
+		        }
+		        .timer{
+		            background-color: white;
+                    border-radius: 5px;
+                    color: white;
+		            border:1px solid rgb(255, 255, 255);
+		            height: 7vh;
+		            width:15vw;
+		        }
+		        .divoption{
+		            border:1px solid green;
+		            height: 17vh;
+		            /*background: green;
+		            clip-path: polygon(15% 0, 85% 0, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0 85%, 0 15%);*/
+		
+		        }
+		
+		        h2 {
+		             color: #18191b;
+		             font-size: 15px;
+		        
+		        }
+		
+		
+		
+		        section > div {
+		            flex: 1;
+		            padding: 0.5rem;
+		        }
+		
+		        input[type="radio"] {
+		            display: none;
+		
+		        }
+		
+		        input[type="radio"]:not(:disabled) ~ label {
+		            cursor: pointer;
+		        }
+		        input[type="radio"]:disabled ~ label {
+		            color: #bcc2bf;
+		            border-color: #bcc2bf;
+		            box-shadow: none;
+		            cursor: not-allowed;
+		        }
+		
+		        label.label1 {
+		            height: 100px;
+                    width:190px;
+                    
+		            display: block;
+                    background:#9ec3ff;		 
+                    border: 0px solid rgb(8, 27, 8);
+                    overflow-x: hidden;
+		            border-radius: 10px;
+		            text-align: left;
+		            box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.5);
+		            position: relative;
+		            display: flex;
+					justify-content: center;
+		        }   
+				label.label2{
+					height: 10vh;
+		            width:9.7vw;
+		            display: block;
+		            background: #cadbf7;
+		            overflow-x: hidden;
+		            border: 1px solid #091c3d;
+		            border-radius: 10px;
+		            padding: 4rem;
+		            margin-bottom: 1rem;
+		            padding-top:15px; 
+		            text-align: left;
+		            position: relative;
+		            display: flex;
+		            justify-content: center;
+                    font-size: 3vh;
+				}
+                label.label2:focus{
+                    background-color: red;
+                }
+				.A{
+					box-shadow: 10px 10px 10px black;
+                    color: rgb(223, 14, 14);
+				}
+				.B{
+					box-shadow: 10px 10px 10px black;
+				}
+				.C{
+					box-shadow: 10px 10px 10px black;
+				}
+				.D{
+					box-shadow: 10px 10px 10px black;
+				}
+
+                input[type="radio"]:checked + label.label2 {
+		            background: #4286f4;
+		            color: white;
+		            box-shadow: 3px 3px 6px rgba(2, 2, 2, 0.603);
+					border: 3px solid rgb(20, 11, 44);
+		        }
+		
+		        input[type="radio"]:checked + label {
+		            background: #4286f4;
+		            color: white;
+		            box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.932);
+					border: 1.5px solid rgb(5, 20, 53);
+		        }
+				
+		
+		        input[type="radio"]:checked + label::after {
+		            color: #3d3f43;
+		            font-family: FontAwesome;
+		            border: 2px solid #031d10;
+		            /*content: "\221E";
+		            font-size: 24px;
+		            position: absolute;
+		            top: -25px;
+		            left: 50%;
+		            transform: translateX(-50%);
+		            height: 50px;
+		            width: 50px;
+		            line-height: 50px;
+		            text-align: center;
+		            border-radius: 50%;
+		            background: white;*/
+		        }
+		
+		        p {
+		            font-weight: 500;
+		        }
+		        
+		        .textoptions{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+		            border: 0px solid black;
+		            resize: none;
+		            outline: none;
+					padding-top: 12vh;
+					margin-left:1vw;
+					padding-right: 12px;
+		            height:97.5px;
+		            width: 190px;
+					border-radius:5px;
+		            background: inherit;
+		            cursor: pointer;
+                    color: rgb(10, 20, 8);
+                    font-weight: bold;
+                }
+				
+
+
+
+
+
+
+
+				.textarea-scrollbar {
+  margin: auto;
+  
+}
+
+
+/*************** SCROLLBAR BASE CSS ***************/
+
+.scroll-wrapper {
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: relative;
+}
+
+.scroll-wrapper > .scroll-content {
+  border: none !important;
+  box-sizing: content-box !important;
+  height: auto;
+  left: 0;
+  margin: 0;
+  max-height: none;
+  max-width: none !important;
+  overflow: scroll !important;
+  padding: 0;
+  position: relative !important;
+  top: 0;
+  width: auto !important;
+}
+
+.scroll-wrapper > .scroll-content::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+}
+
+.scroll-element {
+  display: none;
+}
+
+.scroll-element,
+.scroll-element div {
+  box-sizing: content-box;
+}
+
+.scroll-element.scroll-x.scroll-scrollx_visible,
+.scroll-element.scroll-y.scroll-scrolly_visible {
+  display: block;
+}
+
+.scroll-element .scroll-bar,
+.scroll-element .scroll-arrow {
+  cursor: default;
+}
+
+
+
+.scroll-textarea > .scroll-content {
+  overflow: hidden !important;
+}
+
+.scroll-textarea > .scroll-content > textarea {
+  border: none !important;
+  box-sizing: border-box;
+  height: 100% !important;
+  margin: 0;
+  max-height: none !important;
+  max-width: none !important;
+  overflow: scroll !important;
+  outline: none;
+  padding: 2px;
+  position: relative !important;
+  top: 0;
+  width: 100% !important;
+}
+
+.scroll-textarea > .scroll-content > textarea::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+}
+
+
+/*************** SIMPLE OUTER SCROLLBAR ***************/
+
+.scrollbar-outer > .scroll-element,
+.scrollbar-outer > .scroll-element div {
+  border: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  z-index: 10;
+}
+
+.scrollbar-outer > .scroll-element {
+  background-color: #cadbf7;
+  
+}
+
+.scrollbar-outer > .scroll-element div {
+  display: block;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.scrollbar-outer > .scroll-element.scroll-x {
+  bottom: 0;
+  height: 12px;
+  left: 0;
+  width: 100%;
+}
+
+.scrollbar-outer > .scroll-element.scroll-y {
+  height: 100%;
+  right: 0;
+  top: 0;
+  width: 12px;
+}
+
+.scrollbar-outer > .scroll-element.scroll-x .scroll-element_outer {
+  height: 8px;
+  top: 2px;
+}
+
+.scrollbar-outer > .scroll-element.scroll-y .scroll-element_outer {
+  left: 2px;
+  width: 8px;
+}
+
+.scrollbar-outer > .scroll-element .scroll-element_outer {
+  overflow: hidden;
+}
+
+.scrollbar-outer > .scroll-element .scroll-element_track {
+  background-color: #cadbf7;
+}
+
+.scrollbar-outer > .scroll-element .scroll-element_outer,
+.scrollbar-outer > .scroll-element .scroll-element_track,
+.scrollbar-outer > .scroll-element .scroll-bar {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+
+.scrollbar-outer > .scroll-element .scroll-bar {
+  background-color: #3f94f5;
+}
+
+.scrollbar-outer > .scroll-element .scroll-bar:hover {
+  background-color: #c2c2c2;
+}
+
+.scrollbar-outer > .scroll-element.scroll-draggable .scroll-bar {
+  background-color:  #3f94f5;
+}
+
+
+/* scrollbar height/width & offset from container borders */
+
+.scrollbar-outer > .scroll-content.scroll-scrolly_visible {
+  left: -12px;
+  margin-left: 12px;
+}
+
+.scrollbar-outer > .scroll-content.scroll-scrollx_visible {
+  top: -12px;
+  margin-top: 12px;
+}
+
+.scrollbar-outer > .scroll-element.scroll-x .scroll-bar {
+  min-width: 10px;
+}
+
+.scrollbar-outer > .scroll-element.scroll-y .scroll-bar {
+  min-height: 10px;
+}
+
+
+/* update scrollbar offset if both scrolls are visible */
+
+.scrollbar-outer > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_track {
+  left: -14px;
+}
+
+.scrollbar-outer > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_track {
+  top: -14px;
+}
+
+.scrollbar-outer > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size {
+  left: -14px;
+}
+
+.scrollbar-outer > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size {
+  top: -14px;
+}
